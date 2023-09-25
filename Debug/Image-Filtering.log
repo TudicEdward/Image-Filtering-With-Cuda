@@ -1,0 +1,10 @@
+﻿  Image_Filtering.cpp
+Image_Filtering.obj : error LNK2019: unresolved external symbol "public: __thiscall cv::Mat::Mat(void)" (??0Mat@cv@@QAE@XZ) referenced in function "public: __thiscall cv::MatExpr::operator class cv::Mat(void)const " (??BMatExpr@cv@@QBE?AVMat@1@XZ)
+Image_Filtering.obj : error LNK2019: unresolved external symbol "public: __thiscall cv::Mat::~Mat(void)" (??1Mat@cv@@QAE@XZ) referenced in function "public: __thiscall cv::MatExpr::~MatExpr(void)" (??1MatExpr@cv@@QAE@XZ)
+Image_Filtering.obj : error LNK2019: unresolved external symbol "public: static class cv::MatExpr __cdecl cv::Mat::zeros(int,int,int)" (?zeros@Mat@cv@@SA?AVMatExpr@2@HHH@Z) referenced in function _main
+Image_Filtering.obj : error LNK2019: unresolved external symbol "public: __thiscall cv::Mat::Mat(class cv::Mat &&)" (??0Mat@cv@@QAE@$$QAV01@@Z) referenced in function "public: __thiscall cv::MatExpr::operator class cv::Mat(void)const " (??BMatExpr@cv@@QBE?AVMat@1@XZ)
+Image_Filtering.obj : error LNK2019: unresolved external symbol "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z) referenced in function _main
+Image_Filtering.obj : error LNK2019: unresolved external symbol "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::debug_build_guard::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@debug_build_guard@1@@Z) referenced in function _main
+Image_Filtering.obj : error LNK2019: unresolved external symbol "void __cdecl cv::circle(class cv::debug_build_guard::_InputOutputArray const &,class cv::Point_<int>,int,class cv::Scalar_<double> const &,int,int,int)" (?circle@cv@@YAXABV_InputOutputArray@debug_build_guard@1@V?$Point_@H@1@HABV?$Scalar_@N@1@HHH@Z) referenced in function _main
+D:\Faculta\opencv\build\x64\vc15\lib\opencv_world454d.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+D:\Faculta\Cuda\Image-Filtering\Debug\Image-Filtering.exe : fatal error LNK1120: 7 unresolved externals

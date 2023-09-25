@@ -1,0 +1,34 @@
+﻿  Compiling CUDA source file Algorithm.cu...
+  
+  D:\Faculta\Cuda\Image-Filtering>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Algorithm.cu.obj "D:\Faculta\Cuda\Image-Filtering\Algorithm.cu" 
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(25): warning #177-D: variable "rgbOffset" was declared but never referenced
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(26): warning #177-D: variable "rgb" was declared but never referenced
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(15): error : calling a __host__ function("cudaStreamSynchronize") from a __global__ function("Negative_image") is not allowed
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(15): error : identifier "cudaStreamSynchronize" is undefined in device code
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(29): error : calling a __host__ function("cudaStreamSynchronize") from a __global__ function("Grayscale_image") is not allowed
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(29): error : identifier "cudaStreamSynchronize" is undefined in device code
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(45): error : calling a __host__ function("cudaStreamSynchronize") from a __global__ function("Sepia_image") is not allowed
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(45): error : identifier "cudaStreamSynchronize" is undefined in device code
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(58): error : calling a __host__ function("cudaStreamSynchronize") from a __global__ function("Red_image") is not allowed
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(58): error : identifier "cudaStreamSynchronize" is undefined in device code
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(70): error : calling a __host__ function("cudaStreamSynchronize") from a __global__ function("Green_image") is not allowed
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(70): error : identifier "cudaStreamSynchronize" is undefined in device code
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(82): error : calling a __host__ function("cudaStreamSynchronize") from a __global__ function("Blue_image") is not allowed
+  
+D:\Faculta\Cuda\Image-Filtering\Algorithm.cu(82): error : identifier "cudaStreamSynchronize" is undefined in device code
+  
+  12 errors detected in the compilation of "D:/Faculta/Cuda/Image-Filtering/Algorithm.cu".
+  Algorithm.cu
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\CUDA 11.5.targets(785,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Algorithm.cu.obj "D:\Faculta\Cuda\Image-Filtering\Algorithm.cu"" exited with code 1.
